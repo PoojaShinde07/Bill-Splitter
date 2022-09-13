@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Barriecito|Lora&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* color: #ff0c0c; */
+  font-family: 'Lora', serif;
+  background: url(bs.jpg) no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+  
+}
+.wrapper {
+  width: 100%;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  font-size: 4rem;
+  font-family: 'Roboto', cursive;
+  /* margin-bottom: 2rem; */
+  font-weight: bold;
+  color:#ffffff;
+  text-shadow: 0 2px 0 black;
+  
+}
+
+form {
+  margin: 0 auto;
+  border: 3px solid black;
+  width: 35%;
+  padding: 2rem;
+  box-sizing: border-box;
+  backdrop-filter: blur(4px);
+
+  
+}
+label {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+  color:#ffffff;
+  text-shadow: 0 2px 0 black;
+}
+.fas {
+  font-size: 1rem;
+  margin-right: .4rem;
+}
+input {
+  margin: .8rem 2rem 2rem 0;
+  display: block;
+  font-size: 1.1rem;
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  width: 75%;
+  background: none;
+  color: white;
+}
+input::placeholder {
+  color:#a8a1a1
+}
+
+#addTip {
+  border: none;
+  background: none;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #51916e;
+  font-family: 'Lora', serif;
+}
+#addTip:hover {
+  color: #b7c0c9;
+}
+#tipInput {
+display: none;
+  transition: display 3s ease-in;
+  -webkit-transition: display 3s ease-in;
+}
+#tipPercent{
+  margin-bottom: .5rem;
+}
+#switchTip {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  border: none;
+}
+.buttonSpace {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+}
+.buttonSpace button {
+  margin-top: .6rem;
+  border-radius: 10px;
+  display: inline-block;
+  padding: .5rem 4rem;
+  font-family: 'Lora', serif;
+  font-size: 1.2rem;
+}
+#splitBtn {
+  transition: .3s;
+  background-color: #51916e;
+  color: #fff;
+}
+#splitBtn:hover {
+  border: 1px solid #51916e;
+  background-color: #fff;
+  letter-spacing: .4rem;
+  color: #2E3F51;
+}
+#resetBtn {
+  background-color: #ae1b1b;
+  color: white;
+}
+#perPerson {
+  padding-top: 1.5rem;
+  font-family: 'Abril-Fatface', cursive;
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #faf9f9;
+  font-weight: 10px;
+  
+}
+
+
+ /* =============== . MEDIA QUERIES ============  */
+
+ @media screen and (max-width: 992px) {
+  .insert {
+  width: 80%;
+}
+  label {
+    display: block;
+  }
+
+  #submit {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+ .insert {
+  width: 90%;
+}
+.buttonSpace button {
+  width: 90%;
+  display: inline-table;
+
+}
+}
+
+
+
+
+
+
+
+
