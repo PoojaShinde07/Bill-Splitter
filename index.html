@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Splitter</title>
+    <link href="billsplitter.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/9e385a194d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="header">
+          Bill Splitter
+        </div>
+      
+        <form class="insert">
+          <label id="totalL"><i class="fas fa-coins"required></i>Enter the Amount</label>
+          <input type="number" id="total" placeholder="Add the total amount">
+      
+           <label id="totalL"><i class="fas fa-users" required></i> How many people?</label>
+          <input type="number" id="people" placeholder="Add the number of people">
+      
+          <label id="tipL"><i class="fas fa-heart"></i> Feeling generous? <button id="addTip">Add a tip</button></label>
+          <div id="tipInput">
+            <input type="number" id="tipPercent" placeholder="add % of the total">
+            <input type="number" id="tipCustom" placeholder="Add custom tip">
+          </div>
+          <div class="buttonSpace">
+            <button id="splitBtn">Split!</button>
+            <button id="resetBtn">Reset</button>
+          </div>
+          <div id="perPerson">0</div>
+        </form>
+      </div>
+      <script src="billsplitter.js"></script>
+      <footer>by Pooja Shinde</footer>
+      
+</body>
+</html>
